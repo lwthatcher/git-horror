@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Commits and pushes every change staged or not.
+# This is a horrible horrible thing to do, but I'm lazy.
+
+git commit -a -m "$1"
+git push
