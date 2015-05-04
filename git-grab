@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if cd $2 >& /dev/null; then
+  git pull
+else
+  git clone $1 $2
+fi
