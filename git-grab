@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clone or pull a repo
-# Of the horrible things in this repo, this is the least bad, but is still 
+# Of the horrible things in this repo, this is the least bad, but is still
 # horrible because how brittle it is. What if origin is wrong? What if dir
 # exists but isn't what you thought it was? All sorts of things can go wrong.
 
