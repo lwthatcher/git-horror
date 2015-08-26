@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Does an amend to the last commit with the given message.
+# This is mostly here because I can never remember the command.
+
+git commit --amend -m "$1"
