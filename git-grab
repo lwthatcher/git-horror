@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Clone or pull a repo
-# Of the horrible things in this repo, this is the least bad, but is still
-# horrible because how brittle it is. What if origin is wrong? What if dir
+# Clone or pull a repo, depending on if it has been cloned already or not.
+# Compared to the horrible things in this repo, this isn't least bad, but is
+# still horrible because how brittle it is. What if origin is wrong? What if dir
 # exists but isn't what you thought it was? All sorts of things can go wrong.
 
 if cd $2 >& /dev/null; then

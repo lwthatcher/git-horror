@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Clone GitHub
-# clones a project from the current user
-# assumes that your username matches your github name
+# Clones a github project using your unix username and a given project name.
+# This one isn't too bad, but it does assume that your unix username matches
+# your github user name, which can be false in many cases.
 
 git clone git@github.com:$USER/$1

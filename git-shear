@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# Tries to completely destroy a branch both locally and on origin
-# This is likely a bad idea, but yet here it is because I never remember how
-# to delete branches
+# Tries to completely destroy a branch both locally and on the origin.
+# This is likely a bad idea, as you will eventually delete code you didn't mean
+# to, but yet here it is because I never remember how to delete branches.
 
 git branch -D $1
 git push origin --delete $1
