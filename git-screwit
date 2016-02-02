@@ -2,11 +2,11 @@
 
 # This script is for when you totally screw up and want to just start over.
 # It removes everything in the current directory, and reclones the repo.
-# This script has an `rm -rf` and as such, will eventually delete something
-# you really didnt want to delete.
+# This deletes *everything* in the current directory, so it can be extreamly
+# dangerous.
 
 REMOTE="$(git remote -v 2> /dev/null | grep "origin\s.\+(fetch)" | awk '{print $2}')"
 if [ -n "$REMOTE" ]; then
-    rm -rf $PWD
-    git clone $REMOTE $PWD
+    find . -mindepth 1 -delete
+    git clone $REMOTE .
 fi
