@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Forcibly undoes the last commit, which is bad practice since your not
+# supposed to rewrite history. Luckily the other commit will still be
+# there...for now.
+
+git reset --hard HEAD~1
