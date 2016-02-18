@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Undoes your previous commit.
+# This is slightly shorter than the actual command.
+#
+# This probably won't do anything terrible, but might be misleading about
+# what it is actually undoing.
+git reset --soft HEAD~ 
